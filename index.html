@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport"/>
+
+    <title>Brillenberater</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="styles/header.css">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+</head>
+<body>
+
+<header>
+    <div class="header container">
+        <div class="header__title">
+            <h1 class="header__large-title">BRILLENBERATER</h1>
+            <h3 class="header__text">In weniger schritten zur perfekten Brille</h3>
+        </div>
+
+        <div class="header__content">
+            <img src="media/header.png" class="header__image">
+            <button class="header__button" onclick="backBtn()">Neu starten</button>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="wizard__steps-content container">
+        <div class="wizard__steps">
+            <a><span class="badge">1</span></a>
+            <a><span class="badge">2</span></a>
+            <a><span class="badge">3</span></a>
+            <a><span class="badge">4</span></a>
+            <a class="current"><span class="badge badge-inverse">5</span></a>
+        </div>
+    </div>
+
+    <!--Face shape section-->
+
+    <section class="face-shape__section container">
+        <h1 class="section__title">Welche Gesichtform haben Sie?</h1>
+
+        <div class="section__objects">
+            <div class="single-object__faces">
+                <img src="media/face-1.png" class="face-shape__image">
+                <form class="section__object-content">
+                    <label><input type="checkbox" class="section__checkbox" onclick="fontBold()"></label>
+                    <p class="object__text">Eckig</p>
+                </form>
+            </div>
+
+            <div class="single-object__faces">
+                <img src="media/face-2.png" class="face-shape__image">
+                <form class="section__object-content">
+                    <label><input type="checkbox" class="section__checkbox" onclick="fontBold()"></label>
+                    <p class="object__text">Rund</p>
+                </form>
+            </div>
+
+            <div class="single-object__faces">
+                <img src="media/face-3.png" class="face-shape__image">
+                <form class="section__object-content">
+                    <label><input type="checkbox" class="section__checkbox" onclick="fontBold()"></label>
+                    <p class="object__text">Oval</p>
+                </form>
+            </div>
+
+            <div class="single-object__faces">
+                <img src="media/face-4.png" class="face-shape__image">
+                <form class="section__object-content">
+                    <label><input type="checkbox" class="section__checkbox" onclick="fontBold()"></label>
+                    <p class="object__text">Herzformig</p>
+                </form>
+            </div>
+        </div>
+
+        <div class="nav__button-next__content">
+            <span class="nav__button-text">WEITER</span>
+            <button class="nav__button-next" onclick="nextBtn()"><i class="fas fa-angle-right"></i></button>
+        </div>
+    </section>
+
+    <!--Glasses type section-->
+
+    <section class="glasses-type__section container">
+        <h1 class="section__title">Welche Anforderungen stellen Sie an die Fassung?</h1>
+
+        <div class="section__objects">
+            <div class="single-object__glasses">
+                <img src="media/glasses-1.png" class="glasses-type__image">
+                <form class="section__object-content">
+                    <label><input type="checkbox" class="section__checkbox" onclick="fontBold()"></label>
+                    <p class="object__text">Bruchsicher & rostfrei:<br/> Metal-Fassungen</p>
+                </form>
+            </div>
+
+            <div class="single-object__glasses">
+                <img src="media/glasses-2.png" class="glasses-type__image">
+                <form class="section__object-content">
+                    <label><input type="checkbox" class="section__checkbox" onclick="fontBold()"></label>
+                    <p class="object__text">Farbenfroh & extravagant:<br/> Kunststoff-Fassungen</p>
+                </form>
+            </div>
+
+            <div class="single-object__glasses">
+                <img src="media/glasses-1.png" class="glasses-type__image">
+                <form class="section__object-content">
+                    <label><input type="checkbox" class="section__checkbox" onclick="fontBold()"></label>
+                    <p class="object__text">Leicht & stabil:<br/>Titan Fassungen</p>
+                </form>
+            </div>
+        </div>
+
+        <div class="nav__button-back__content">
+            <button class="nav__button-back" onclick="backBtn()"><i class="fas fa-angle-left"></i></button>
+            <span class="nav__button-text">ZURÜCK</span>
+        </div>
+    </section>
+
+    <!--Products section-->
+
+    <div class="container">
+        <header class="products__section-header">
+            <h1 class="section__title-products">Produkte, die Ihren Wünschen entsprechen</h1>
+        </header>
+    </div>
+
+    <section class="products__section container">
+        <div class="products__list">
+            <img src="media/product-image.png" class="products__section-image">
+
+            <div class="products__product-description">
+                <h1 class="products__product-name">FUNCHAL</h1>
+
+                <p class="products__product-features"><img src="media/icon1.png" class="product__icon">Brilentyp: Damen, Herren</p>
+                <p class="products__product-features"><img src="media/icon1.png" class="product__icon">Rahmentyp: Randlose Brille</p>
+                <p class="products__product-features"><img src="media/icon1.png" class="product__icon">Eckiger Rahmen</p>
+                <p class="products__product-features"><img src="media/icon1.png" class="product__icon">Ovaler Rahmen</p>
+                <p class="products__product-features"><img src="media/icon1.png" class="product__icon">Runder Rahmen</p>
+                <p class="products__product-features"><img src="media/icon1.png" class="product__icon">Stil: casual, extravagant</p>
+                <p class="products__product-features"><img src="media/icon2.png" class="product__icon">Einstärkenbrille</p>
+                <p class="products__product-features"><img src="media/icon2.png" class="product__icon">Material: Metall</p>
+            </div>
+
+            <div class="products__summary">
+                <div class="products__product-information">
+                    <p class="products__product-text">Rahmen inkl. Gläser & Service</p>
+                    <span class="products__product-price">ab 39,90 €</span>
+                </div>
+
+                <button class="products__button">Zum Produkt</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="products__section container">
+        <div class="products__list">
+            <img src="media/product-image.png" class="products__section-image">
+
+            <div class="products__product-description">
+                <h1 class="products__product-name">FUNCHAL</h1>
+
+                <p class="products__product-features"><img src="media/icon1.png" class="product__icon">Brilentyp: Damen, Herren</p>
+                <p class="products__product-features"><img src="media/icon1.png" class="product__icon">Rahmentyp: Randlose Brille</p>
+                <p class="products__product-features"><img src="media/icon1.png" class="product__icon">Eckiger Rahmen</p>
+                <p class="products__product-features"><img src="media/icon1.png" class="product__icon">Ovaler Rahmen</p>
+                <p class="products__product-features"><img src="media/icon1.png" class="product__icon">Runder Rahmen</p>
+                <p class="products__product-features"><img src="media/icon1.png" class="product__icon">Stil: casual, extravagant</p>
+                <p class="products__product-features"><img src="media/icon2.png" class="product__icon">Einstärkenbrille</p>
+                <p class="products__product-features"><img src="media/icon2.png" class="product__icon">Material: Metall</p>
+            </div>
+
+            <div class="products__summary">
+                <div class="products__product-information">
+                    <p class="products__product-text">Rahmen inkl. Gläser & Service</p>
+                    <span class="products__product-price">ab 149,90 €</span>
+                </div>
+
+                <button class="products__button">Zum Produkt</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="main.js"></script>
+
+</body>
+</html>

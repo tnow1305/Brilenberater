@@ -1,0 +1,384 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* wizard steps */
+
+.wizard__steps{
+    display: flex;
+    justify-content: space-between;
+}
+
+.wizard__steps a {
+    text-decoration: none;
+}
+
+.wizard__steps-content a {
+    padding: 10px 12px 10px;
+    background: #9999cc;
+    position: relative;
+    display: inline-block;
+    width: 19%;
+}
+
+.wizard__steps-content a:before {
+    width: 0;
+    height: 0;
+    border-top: 20px inset transparent;
+    border-bottom: 20px inset transparent;
+    border-left: 20px solid #fff;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+}
+
+.wizard__steps-content a:after {
+    width: 0;
+    height: 0;
+    border-top: 20px inset transparent;
+    border-bottom: 20px inset transparent;
+    border-left: 20px solid #9999cc;
+    position: absolute;
+    content: "";
+    top: 0;
+    right: -20px;
+    z-index: 2;
+}
+
+.wizard__steps-content a:first-child:before,
+.wizard__steps-content a:last-child:after {
+    border: none;
+}
+
+.wizard__steps-content a:first-child {
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+}
+.wizard__steps-content a:last-child {
+    -webkit-border-radius: 0 4px 4px 0;
+    -moz-border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.wizard__steps-content .badge {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 0 18px;
+    position: relative;
+    top: -1px;
+    color: #ffffff;
+    font-size: 14px;
+}
+.wizard__steps-content a:first-child .badge {
+    margin-left: 0;
+}
+
+.wizard__steps-content .current {
+    background: #6600a1;
+    color: #fff;
+}
+
+.wizard__steps-content .current:after {
+    border-left-color: #6600a1;
+}
+
+/* Face shape section */
+
+.face-shape__section {
+    display: flex;
+    flex-direction: column;
+}
+
+.single-object__faces {
+    transition: 0.2s;
+}
+
+.single-object__faces:hover {
+    box-shadow: 0 2px 2px 2px #d3d3d3;
+}
+
+.face-shape__image {
+    height: 264px;
+}
+
+.nav__button-next__content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.nav__button-next {
+    display: flex;
+    justify-content: center;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    padding: 0;
+    background: #ededed;
+    border: #ededed;
+    transition: 0.2s;
+}
+
+.nav__button-next:hover {
+    background: #9999cc;
+}
+
+/* Glasses type section */
+
+.glasses-type__section {
+    display: none;
+}
+
+.single-object__glasses {
+    transition: 0.2s;
+}
+
+.single-object__glasses:hover {
+    box-shadow: 0 2px 2px 2px #d3d3d3;
+}
+
+.glasses-type__image {
+    height: 264px;
+}
+
+.nav__button-back__content {
+    display: flex;
+    align-items: center;
+}
+
+.nav__button-back {
+    display: flex;
+    justify-content: center;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    padding: 0;
+    background: #ededed;
+    border: #ededed;
+    transition: 0.2s;
+}
+
+.nav__button-back:hover {
+    background: #9999cc;
+}
+
+/* Products section */
+
+.products__section {
+    margin-bottom: 18px;
+}
+
+.products__section-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #6600a1;
+    height: 48px;
+    margin: 14px 0;
+}
+
+.section__title-products {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.products__list {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid #d3d3d3;
+    padding: 2px;
+}
+
+.products__section-image {
+    height: 336px;
+}
+
+.products__product-name {
+    color: #000000;
+    font-weight: 400;
+    font-size: 24px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #d3d3d3;
+}
+
+.products__product-features {
+    display: flex;
+    align-items: center;
+    color: #000000;
+    margin: 8px 0;
+}
+
+.product__icon {
+    margin-right: 8px;
+}
+
+.products__summary {
+    margin-top: 44px;
+}
+
+.products__product-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #d3d3d3;
+    border-radius: 6px;
+    padding: 16px;
+}
+
+.products__product-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    margin: 0;
+}
+
+.products__product-price {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.products__button {
+    width: 100%;
+    height: 64px;
+    border-radius: 6px;
+    font-size: 28px;
+    font-weight: 500;
+    background-color: #008000;
+    color: #ffffff;
+    outline: none;
+    margin-top: 12px;
+    transition: 0.2s;
+}
+
+.products__button:hover {
+    background-color: #32cd32;
+}
+
+/* Common classes */
+
+.section__title {
+    text-align: center;
+}
+
+.section__objects {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.section__object-content {
+    display: flex;
+    align-items: center;
+    height: 64px;
+    background-color: #ededed;
+}
+
+.section__checkbox {
+    margin-left: 18px;
+    margin-right: 8px;
+    outline: none;
+}
+
+.object__text {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    color: #000000;
+    font-size: 18px;
+}
+
+.object__text--check {
+    margin: 0;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nav__button-text {
+    font-size: 24px;
+    padding: 0 18px;
+}
+
+.fas {
+    font-size: 44px;
+}
+
+/* RWD */
+
+@media (max-width: 1199px) {
+    /* Face shape section */
+
+    .section__objects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .single-object__faces {
+        width: 264px;
+        margin-bottom: 18px;
+    }
+
+    /* Glasses type section */
+
+    .single-object__glasses {
+        width: 366px;
+        margin-bottom: 18px;
+    }
+
+    /* Products section */
+
+    .products__section-image {
+        height: 256px;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .products__section {
+        display: flex;
+        justify-content: center;
+    }
+
+    .products__section-image {
+        width: 100%;
+    }
+
+    .products__list {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 366px;
+        padding: 12px;
+    }
+
+    .products__product-information,
+    .producs__button {
+        width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Next, back buttons */
+    .nav__button-back__content,
+    .nav__button-next__content {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* Products section */
+    .products__section-header {
+        height: 56px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 320px) {
+    .glasses-type__image,
+    .single-object__glasses {
+        width: 100%;
+    }
+}
